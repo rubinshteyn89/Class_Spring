@@ -1,0 +1,7 @@
+#Python Cheatsheet
+
+Command 		Behavior
+
+print()			prints string, integer, or variable
+
+
