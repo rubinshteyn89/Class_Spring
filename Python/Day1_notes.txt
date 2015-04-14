@@ -5,3 +5,7 @@ Command 		Behavior
 print()			prints string, integer, or variable
 
 
+for loop:
+i = 10 lines
+for i in range(10):
+
