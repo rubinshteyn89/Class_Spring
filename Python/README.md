@@ -1,1 +1,1 @@
-#Read this.
+#Python Class notes and codes.
