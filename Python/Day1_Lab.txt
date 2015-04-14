@@ -25,3 +25,15 @@ Hello 	 World!
 >>> print(2/3)
 0.6666666666666666
 >>> 
+
+
+############## Math Problem with average speed ###############
+
+>>> print("average time per mile is"43.5/16.1)
+SyntaxError: invalid syntax
+
+>>> print("average time per mile is",43.5/16.1, "minutes")
+average time per mile is 2.701863354037267 minutes
+
+>>> print("average miles per hour is ",60/2.701863354037267)
+average miles per hour is 22.20689655172414
