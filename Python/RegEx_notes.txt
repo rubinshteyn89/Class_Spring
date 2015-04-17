@@ -1,0 +1,26 @@
+#####
+REGEX = Regular Expressions
+- Used to find certain text in files, and web content
+- Finds patterns based on syntax
+
+\d	Represents any number
+\D	Represents anything that is NOT a number
+\s	Represents any space
+\S	Represents anthing that is NOT a space
+\w	Any character
+\W	Anything that is NOT a character
+.	period
+\b	Matches a space and character preceding the space
++	one or more of specified parameter. Example: \w+ is 1 or more of any character
+?	Looking for 0 or 1 repetitions
+*	Looking for 0 or more repetitions
+{n}	Looks for 'n' amount of repetitions
+\e	Escape white space
+\f	Form Feed
+\r	Carriage Return
+\t	tab
+[ ]	Searches for what is in the brackets
+
+Misspelled word
+Calender	Calendar
+Calend[ae]r
