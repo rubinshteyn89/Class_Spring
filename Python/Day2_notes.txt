@@ -1,1 +1,67 @@
 #Day 2 pythons
+
+Binary = Incremented by 2
+Decimal = Incremented by 10
+Hexidecimal = Incremented by 16
+
+#######################
+
+Conversion functions:
+
+bin() = binary conversion
+int() = decimal conversion
+hex() = hexidecimal conversion
+
+example:
+
+>>> bin(25)
+'0b11001'
+>>> hex(0b11001)
+'0x19'
+>>> int(0x19)
+25
+
+######################
+
+Numbers:
+2 - Integer [int(2)]
+2.1 - float number [float(2.1)]
+
+expression: A combination of variables, operators, and values that represents a single result
+value.
+
+y * 3 + 7 
+
+statement: A section of code that represents a command or action. So far, the statements
+we have seen are assignments and print statements.
+
+x = y * 3 + 7
+
+
+
+##########
+Math Functions
+
+import math	imports math library
+math.sqrt()	square root
+math.exp()	exponential or "to the power of"
+math.log()	the natural (base e) logarithm of variable
+math.ceil()	the smallest whole number of variable
+math.floor()	the largest whole number of variable
+math.abs()	absolute value
+math.max(x,y)	maximum value
+math.min(x,y)	minimum value
+
+###########
+Types
+
+print(type(20)) #-- int
+
+print(type(10.0)) #-- float
+
+print(type("Hello")) #-- str
+
+print(type(True)) #-- bool
+
+
+
