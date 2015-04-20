@@ -11,6 +11,7 @@ REGEX = Regular Expressions
 \W	Anything that is NOT a character
 .	period
 \b	Matches a space and character preceding the space
+$	Specifies end of string
 +	one or more of specified parameter. Example: \w+ is 1 or more of any character
 ?	Looking for 0 or 1 repetitions
 *	Looking for 0 or more repetitions
@@ -20,7 +21,10 @@ REGEX = Regular Expressions
 \r	Carriage Return
 \t	tab
 [ ]	Searches for what is in the brackets
-
+|	or
 Misspelled word
 Calender	Calendar
 Calend[ae]r
+
+python: import re
+
