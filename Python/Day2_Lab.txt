@@ -1,0 +1,5 @@
+#Day2 Lab
+
+#1. 8 & 9 are not part of the octal digit system.
+
+#2. 
