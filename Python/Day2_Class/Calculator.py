@@ -1,4 +1,5 @@
 __author__ = 'ilya_rubinshteyn'
+#Note: Only works with Python 3.X
 
 def Calculator():
     turnedOn = True
