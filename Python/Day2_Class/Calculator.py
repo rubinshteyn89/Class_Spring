@@ -13,10 +13,10 @@ def Calculator():
         try:
 
             Operation = float(eval(input("Input: ")))
-            print("Ouput: ",Operation)
-        except(ValueError,SyntaxError,TypeError) :
-            print("Ouput: Invalid operation, try again.")
-        except(NameError):
+            print("Output: ",Operation)
+        except(ValueError,SyntaxError) :
+            print("Output: Invalid operation, try again.")
+        except(NameError,TypeError):
             print("Exiting Calculator...")
             turnedOn = False
 
