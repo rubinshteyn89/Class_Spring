@@ -1,0 +1,19 @@
+#Day3 notes
+
+Man pages:
+cmd : man [command] --- Opens User manual for the specified command.
+
+Info pages:
+cmd : info [command] --- More information about specified command.
+
+Help
+cmd : help [command] or [command] --help --- More info on command.
+
+
+Locating command or path or file:
+cmd : locate [command] | whereis [argument] --- locates path of command or file
+
+Update location DB:
+cmd : updatedb --- updates database of locate command with new paths,
+
+
