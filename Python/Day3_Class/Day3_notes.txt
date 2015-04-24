@@ -1,2 +1,19 @@
 #Day 3 Notes
 
+Function -- a named sequence of statements that performs a computation.
+- Can be reused multiple times
+- Will be easier to read / refactor / debug
+- Can be used to structure a program or project with modulation and encapsulation
+
+input() --- Can only have 1 argument
+raw_input() == to get string
+
+function example:
+def mult(x,y):
+  z = x * y
+  return z
+  
+
+
+the stack: optimal order or functional operation? Needs to research...
+
