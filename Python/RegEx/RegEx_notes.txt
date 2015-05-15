@@ -28,3 +28,26 @@ Calend[ae]r
 
 python: import re
 
+
+
+
+##### Linux ReGex notes
+
+grep = find pattern
+grep 'abc' = find string 'abc'
+[^abc] = dont search abc
+
+grep '^root' = matches 1st result
+
+grep 'root$' = matches last result
+
+grep '^$' = filter out the blank lines
+
+grep 'abc+' = matches every addition occurance
+
+grep 'colou?r' = matches either 'color' or 'colour'
+
+grep 'ok|ko' = matches either ok or ko
+
+
+xargs = tries to prevent execution of command if an argument comes up.

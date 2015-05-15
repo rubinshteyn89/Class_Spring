@@ -1,0 +1,41 @@
+Day 5
+
+range loops:
+
+
+range(1) = once
+
+range(1, 100, 2) == from 1 - 99 and oonly count every 2nd integer.
+      ^    ^   ^ 
+Starting  End  Increment
+
+range cannot be negative.	
+
+
+range[1,2,3,4] == variable will take 1 and 2 and 3 and 4 and use it for each operation
+
+
+
+While loop conditions:
+
+break:
+
+while True:
+	print something
+	if some condition:
+		break # breaks the loop because condition is present.
+print some output
+
+
+
+continue:
+
+
+for i in range(20)
+	i*i/0
+	if i == 0:
+		continue #will continue the loop every time conidtion is met.
+	print i
+
+
+

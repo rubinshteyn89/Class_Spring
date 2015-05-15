@@ -1,0 +1,57 @@
+###
+Archiving vs Compression:
+
+- Archiving - Collapses multiple files into one.
+	- Can be done with a few files or multiple directories
+
+- Compression - Makes a file smaller.
+	- Removes redundent data, meta data, replaces with smaller codes.
+	- can be applied to individual files, groups of files or directory trees.
+
+
+#Archiving
+tar - tape archive
+	- Copies and Backs up specific directories or groups of files.
+	- Will include star in later distributions of linux
+
+star - secure tar
+	- Same as tar but adds suport for access control lists and SELinux extensions
+
+tar -cf = create tar archive
+tar -tf = lists contents of archive
+tar -xf = extract file
+
+
+
+
+
+
+
+#Compression
+
+gzip or gunzip
+- compresses / uncompress file
+- very common
+- very efficient
+- Lossless compression
+
+gzip foo = removes file "foo", creates "foo.gz"
+gunzip foo.gz = removes file "foo.gz", creates file "foo"
+
+
+bzip2 or bunzip2
+- Newer and more efficient
+- Uses more CPU usage
+
+
+
+
+Pipes:
+
+
+I/O redirection
+
+STDIN = keyboard input
+STDOUT = visual output; usually in space place as command
+STERR = 
+

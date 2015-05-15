@@ -1,0 +1,10 @@
+
+things may be on mid terms:
+
+
+functions arguments parameters return
+if else or and not
+loops = for, while, break, continue
+numbers, vars, types
+
+
