@@ -1,0 +1,5 @@
+__author__ = 'ilya_rubinshteyn'
+
+for i in range(1, 6, 1):
+
+     print((i, )*5)#
