@@ -32,7 +32,7 @@ __author__ = 'ilya_rubinshteyn'
 #output: ['hello', 'world']
 
 # .replace(x,y) = replaces x with y
-# print("+") = will print + 80 times in same line
+# print("+")*80 = will print + 80 times in same line
 
 #lists: mutable or change-able
 

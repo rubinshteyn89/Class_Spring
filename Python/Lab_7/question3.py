@@ -12,7 +12,7 @@ def guess():
     y = Rando()
 
     print("The computer generated a random number between 0 to 100.")
-    print("for testing purposes:",y," is the random number")
+    print("For testing purposes,",y," is the random number")
     tries = 0
     turned_on = True
     while turned_on:
@@ -63,15 +63,17 @@ def new_game():
             print("Invalid answer. Please Try again.")
 
 if __name__ == '__main__':
-    print(sys.platform)
-    if sys.platform == 'darwin':
+
+    if sys.platform == 'darwin' or sys.platform == 'linux2':
         os.system('clear')
-        try:
-            while True:
-                guess()
-                new_game()
-        except(KeyboardInterrupt):
-            print("\nQuit via keyboard interrupt.")
+        print('')
+
+    try:
+        while True:
+            guess()
+            new_game()
+    except(KeyboardInterrupt):
+        print("\nQuit via keyboard interrupt.\n")
 
 
 
