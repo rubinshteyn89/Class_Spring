@@ -80,89 +80,17 @@ def winner(board):
     return None
 
 
-def legal_moves(board):
-    # collect all board EMPTY positions and put them into the positions list,
-    # so a player (either human or computer) can only move to these places
-    positions = []
-    for i in range(NUM_SQUARES):
-        if board[i] == EMPTY:
-            positions.append(i)
-    return positions
-
-
 def human_move(board, human):
     # human move
-    # get a list of all legal moves
-    legal = legal_moves(board)
-    # initialize it the return move to None
-    move = None
-    # if current legal list has nothing in it
-    if legal == []:
-        # No legal moves at all and just return None
-        return move
-    # now let us find a legal move
-    # keep trying as long as the move is not in the legal list
-    while move not in legal:
-        # init user input
-        user_input = "None"
-        # make sure a user's input is a digit number
-        while not user_input.isdigit():
-            # take a user_input with the prompt " Please enter your move (0 - 8) "
-            user_input = input("Please enter your move (0 - 8): ")
-            if not user_input.isdigit():
-                print("The move has to be a position number.")
-            # print a msg "The move has to be a position number" if it is not digit
-        # now we can convert it to an integer safely
-        move = int(user_input)
-        if move < 0 or move > 8:
-            print("The position of your move has to be between 0 - 8.")
-        elif move not in legal:
-            print("Sorry, that position has already been taken!")
-    # now return the legal next move
-    return move
-
+    m = eval(input("\nPlease enter a human move...\n"))
+    # ...
+    return m
 
 def computer_move(board, computer, human):
-    print("Computer move...")
-    # make a copy of board as a working board
-    board_copy = board
-    # computer will take the best moves in this order
-    best_moves = (4, 0, 2, 6, 8, 1, 3, 5, 7)
-    # generate a list of legal moves with the current board
-    legal = legal_moves(board)
-    # init move to None
-    move = None
-    # if no any possible legal moves
-    if legal == []:
-        # just return computer move as None
-        return move
-    # now loop all the possible moves in the legal list
-    for move in legal:
-        # test this move as a computer move
-        board_copy[move] = computer
-        # if this generates a computer win, return that move
-        if winner(board_copy) == computer:
-            return move
-        # if not, undo the test
-        board_copy[move] = EMPTY
-    # then the computer will check if human can win from the current legal moves
-    # the following code will be almost the same as the previous code for computer
-    # loop again all the possible moves in the legal list
-    for move in legal:
-        board_copy[move] = human
-        if winner(board_copy) == human:
-            return move
-        board_copy[move] = EMPTY
-        # test this move as a human move
-        # if this generates a human win, return that move to block it
-        # if not, undo the test
-
-    # if no one can win through previous tests, take the best from the BEST_MOVES
-    for move in best_moves:
-        if move in legal:
-            return move
-    return move
-
+    # computer move
+    # ...
+    print("\nComputer move...")
+    return 1
 
 def next_turn(turn):
     # change the turn to next player
@@ -226,7 +154,7 @@ if __name__ == '__main__':
 
     # congratulate the winner or declare a tie
     the_winner = winner(board)
-    congrat_winner(the_winner, computer, human)
-    # congrat_winner('Tie', 'X', 'O')
-    # congrat_winner('X',  'X', 'O')
-    # congrat_winner('O',  'X', 'O')
+    #congrat_winner(the_winner, computer, human)
+    congrat_winner('Tie', 'X', 'O')
+    congrat_winner('X',  'X', 'O')
+    congrat_winner('O',  'X', 'O')

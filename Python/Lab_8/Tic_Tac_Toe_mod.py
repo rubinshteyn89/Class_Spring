@@ -1,6 +1,17 @@
 __author__ = 'ilya_rubinshteyn'
 # global constants
 
+# def Mark_Choice():
+#     user_choice = input("Which would you Like to be '\X' or '\O'? ")
+#     if user_choice == X:
+#         human = X
+#         computer = O
+#         return human == X
+#     else:
+#         human = O
+#         computer = X
+
+
 X = "X"
 O = "O"
 EMPTY = " "
@@ -80,6 +91,18 @@ def winner(board):
     return None
 
 
+def trap(board):
+    possible_traps = \
+       ((0,7,6),
+        (0,2,8),
+        (2,7,8),
+        (2,0,6))
+    for row in possible_traps:
+        if board[row[0]] == board[row[1]] == board[row[2]] != EMPTY:
+            trap = board[row[0]]
+            return trap
+    return None
+
 def legal_moves(board):
     # collect all board EMPTY positions and put them into the positions list,
     # so a player (either human or computer) can only move to these places
@@ -115,7 +138,7 @@ def human_move(board, human):
         # now we can convert it to an integer safely
         move = int(user_input)
         if move < 0 or move > 8:
-            print("The position of your move has to be between 0 - 8.")
+            print("The position of your move has to be between 0 - 8")
         elif move not in legal:
             print("Sorry, that position has already been taken!")
     # now return the legal next move
@@ -149,14 +172,13 @@ def computer_move(board, computer, human):
     # the following code will be almost the same as the previous code for computer
     # loop again all the possible moves in the legal list
     for move in legal:
+        # test this move as a human move
         board_copy[move] = human
+        # if this generates a human win, return that move to block it
         if winner(board_copy) == human:
             return move
-        board_copy[move] = EMPTY
-        # test this move as a human move
-        # if this generates a human win, return that move to block it
         # if not, undo the test
-
+        board_copy[move] = EMPTY
     # if no one can win through previous tests, take the best from the BEST_MOVES
     for move in best_moves:
         if move in legal:
@@ -188,6 +210,8 @@ if __name__ == '__main__':
     # variables
     human = X
     computer = O
+    # Mark_Choice()
+
     turn = human
     the_winner = TIE
 
